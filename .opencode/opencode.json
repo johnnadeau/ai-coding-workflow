@@ -1,0 +1,16 @@
+{
+  "default_model": "openrouter/qwen/qwen3-coder",
+  "small_model": "openrouter/google/gemini-3-flash-preview",
+  "default_agent": "orchestrator",
+  "permissions": {
+    "file_system": "read_write",
+    "shell": "limited",
+    "network": "none"
+  },
+  "custom_commands": {
+    "/task": "Start a new task with a specific name and prompt",
+    "/review-diff": "Request a code review of the current changes",
+    "/fix-ci": "Attempt to fix CI/CD issues in the current branch",
+    "/pr-notes": "Generate PR notes for the current changes"
+  }
+}
